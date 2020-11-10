@@ -17,7 +17,7 @@ const (
 
 func main() {
 	arguments := args.Default()
-	arguments.InputDirs = []string{"../../../pkg0", "../../../pkg1"}
+	arguments.InputDirs = []string{"./pkg0", "./pkg1", "./pkg2"}
 	arguments.OutputBase = constvar.LabResultPath(labNo)
 
 	if err := arguments.Execute(
@@ -25,7 +25,7 @@ func main() {
 		generator.DefaultNameSystem(),
 		pkg.Packages,
 	); err != nil {
-		fmt.Errorf("lab 0 failed: %s", err.Error())
+		fmt.Errorf("failed: %s", err.Error())
 		os.Exit(1)
 	}
 }
