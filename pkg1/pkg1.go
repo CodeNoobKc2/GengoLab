@@ -35,6 +35,7 @@ func (p *Pkg1) Func(output string) string {
 	return output
 }
 
+// +lab2
 // TestPkg0Func
 func TestPkg1Func(arg0, arg1 string, arg2 int) (string, error) {
 	return fmt.Sprintf("%s%s%v", arg0, arg1, arg2), nil

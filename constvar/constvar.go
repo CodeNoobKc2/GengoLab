@@ -10,6 +10,8 @@ const (
 	PKG_1_PATH = "./pkg1"
 
 	LAB_PATH = "./labs"
+
+	PACKAGE_BASE = "lab"
 )
 
 var (

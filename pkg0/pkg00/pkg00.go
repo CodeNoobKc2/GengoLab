@@ -3,6 +3,7 @@ package pkg00
 
 import "os"
 
+// +lab2:generate
 type Pkg00 struct {
 	field  int
 	Field0 int

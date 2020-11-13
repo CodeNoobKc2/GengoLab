@@ -11,6 +11,7 @@ var (
 	Lock = &sync.Mutex{}
 )
 
+// +lab2
 type Pkg0 struct {
 	field  int
 	Field0 int
